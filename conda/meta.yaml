@@ -3,43 +3,34 @@ package:
   version: 1.1.0
 
 build:
-  rpaths:
-    - lib/R/lib/
-    - lib/
-    - jre/lib/amd64/server/
-    - jre/lib/amd64
+  script_env:
+    - GITHUB_PAT
 
 requirements:
   build:
-    - r-base==3.6.2
-    - openjdk
-    - r-rjava
-    - r-devtools>=2.2
-    - r-udunits2
-    - r-ncdf4
-    - r-gh
-    - r-matrix>=1.2_18
-    - r-rgdal
+    - r-base>=3.6.2
+    - openjdk<9
     - gdal
     - xorg-libxt
     - udunits2
     - curl
     - zstd>=1.4.4
+    - libv8
+    - jq
+    - protobuf
+    - geojson
   run:
-    - r-base==3.6.2
-    - openjdk
-    - r-rjava
-    - r-devtools>=2.2
-    - r-udunits2
-    - r-ncdf4
-    - r-gh
-    - r-matrix>=1.2_18
-    - r-rgdal
+    - r-base>=3.6.2
+    - openjdk<9
     - gdal
     - xorg-libxt
     - udunits2
     - curl
     - zstd>=1.4.4
+    - libv8
+    - jq
+    - protobuf
+    - geojson
 
 about:
   home: https://github.com/SantanderMetGroup/climate4R
