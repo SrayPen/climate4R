@@ -1,6 +1,6 @@
 package:
   name: climate4r
-  version: 1.1.0
+  version: 1.2.0
 
 build:
   script_env:
@@ -8,25 +8,28 @@ build:
 
 requirements:
   build:
-    - r-base>=3.6.2
-    - openjdk<9
+    - r-base=3.6.2=h7ed4ef7_1
+    - r-rjava
+    - openjdk=8.0.152=h7b6447c_3
     - gdal
     - xorg-libxt
     - udunits2
     - curl
-    - zstd>=1.4.4
+    - zstd
     - libv8
     - jq
     - protobuf
     - geojson
   run:
-    - r-base>=3.6.2
-    - openjdk<9
+    - r-base=3.6.2=h7ed4ef7_1
+    - r-rjava
+    - openjdk=8.0.152=h7b6447c_3
+    - openjdk
     - gdal
     - xorg-libxt
     - udunits2
     - curl
-    - zstd>=1.4.4
+    - zstd
     - libv8
     - jq
     - protobuf
